@@ -20,7 +20,6 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 	Plug 'folke/zen-mode.nvim'
 	Plug 'tpope/vim-fugitive'
 	Plug 'nvim-tree/nvim-web-devicons'
-
 	" List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
