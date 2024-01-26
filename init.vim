@@ -18,6 +18,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 	Plug 'folke/which-key.nvim'
 	Plug 'ThePrimeagen/harpoon'
 	Plug 'folke/zen-mode.nvim'
+	Plug 'tpope/vim-fugitive'
 
 	" List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -29,7 +30,9 @@ luafile ~/.config/nvim/after/plugins/treesitter.lua
 luafile ~/.config/nvim/after/plugins/telescope.lua
 luafile ~/.config/nvim/after/plugins/undotree.lua
 luafile ~/.config/nvim/after/plugins/which-key.lua
+luafile ~/.config/nvim/after/plugins/harpoon.lua
 luafile ~/.config/nvim/after/plugins/zen-mode.lua
+luafile ~/.config/nvim/after/plugins/cmp.lua
 
 syntax on
 colorscheme monokai
