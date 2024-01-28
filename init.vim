@@ -19,6 +19,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 	Plug 'ThePrimeagen/harpoon'
 	Plug 'folke/zen-mode.nvim'
 	Plug 'tpope/vim-fugitive'
+	Plug 'nvim-tree/nvim-web-devicons'
 
 	" List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -33,6 +34,7 @@ luafile ~/.config/nvim/after/plugins/which-key.lua
 luafile ~/.config/nvim/after/plugins/harpoon.lua
 luafile ~/.config/nvim/after/plugins/zen-mode.lua
 luafile ~/.config/nvim/after/plugins/cmp.lua
+luafile ~/.config/nvim/after/plugins/devicons.lua
 
 syntax on
 colorscheme monokai
@@ -49,3 +51,4 @@ set signcolumn=yes
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
+set clipboard=unnamedplus
