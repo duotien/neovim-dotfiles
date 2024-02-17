@@ -38,6 +38,8 @@ luafile ~/.config/nvim/after/plugins/harpoon.lua
 luafile ~/.config/nvim/after/plugins/zen-mode.lua
 luafile ~/.config/nvim/after/plugins/cmp.lua
 luafile ~/.config/nvim/after/plugins/venn.lua
+luafile ~/.config/nvim/after/plugins/dap.lua
+luafile ~/.config/nvim/after/plugins/dap-ui.lua
 
 syntax on
 colorscheme monokai

@@ -38,7 +38,8 @@ cmp.setup({
 
 require("neodev").setup({
 	-- add any options here, or leave empty to use the default settings
-	pathStrict = false
+	pathStrict = false,
+	library = {plugins = {"nvim-dap-ui"}, types = true},
 })
 
 
@@ -56,3 +57,5 @@ lspconfig.lua_ls.setup({
 
 lspconfig.clangd.setup({ capabilities = lsp_capabilities })
 lspconfig.pyright.setup({ capabilities = lsp_capabilities })
+lspconfig.cmake.setup({capabilities = lsp_capabilities})
+

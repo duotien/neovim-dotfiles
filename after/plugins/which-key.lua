@@ -8,14 +8,20 @@ wk.register({
 	["<leader>fh"] = { "Help Tags" },
 
 
-	["<leader>z"] = { name="+zen" },
+	["<leader>z"] = { name = "+zen" },
 	["<leader>zz"] = { "Zen light" },
 	["<leader>zZ"] = { "SUPER ZEN" },
 
-	["<leader>h"] = { name="+harpoon" },
+	["<leader>h"] = { name = "+harpoon" },
 	["<leader>ha"] = { "Mark file" },
 	["<leader>hh"] = { "Toggle menu" },
 
-	["<leader>u"] = { "Toggle undo tree"}
+	["<leader>u"] = { "Toggle undo tree" },
+
+	["<leader>d"] = { name = "+debug" },
+	["<leader>db"] = { "Toggle breakpoint" },
+
+	["<leader>p"] = { name = "+project" },
+	["<leader>pv"] = { "Open netrwc" },
 })
 wk.setup()
