@@ -19,9 +19,29 @@ wk.register({
 	["<leader>u"] = { "Toggle undo tree" },
 
 	["<leader>d"] = { name = "+debug" },
-	["<leader>db"] = { "Toggle breakpoint" },
+	["<leader>dc"] = { "Continue" },
+	["<leader>dJ"] = { "Step Over" },
+	["<leader>dj"] = { "Step Into" },
+	["<leader>dK"] = { "Step Out" },
+	["<leader>dl"] = { "Run Last" },
+	["<leader>dr"] = { "Restart" },
+	["<leader>dd"] = { "Disconnect" },
+	["<leader>db"] = { "Toggle Breakpoint" },
+	["<leader>dt"] = { "Toggle DAP-UI" },
 
 	["<leader>p"] = { name = "+project" },
 	["<leader>pv"] = { "Open netrwc" },
+
+	["gd"] = { "Go to Definition" },
+	["K"] = { "Hover" },
+	["[d"] = { "Next Diagnostic" },
+	["]d"] = { "Previous Diagnostic" },
+
+	["<leader>vws"] = { "Workspace Symbol" },
+	["<leader>vd"] = { "Diagnostics" },
+	["<leader>vca"] = { "Code Action" },
+	["<leader>vrr"] = { "References" },
+	["<leader>vrn"] = { "Rename" },
+	["<leader>vf"] = { "Format" },
 })
 wk.setup()

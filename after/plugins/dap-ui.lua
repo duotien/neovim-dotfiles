@@ -18,5 +18,5 @@ dap.listeners.before.event_existed.dapui_config = function()
 	dapui.close()
 end
 
-
 vim.keymap.set("n", '<leader>dt', function() dapui.toggle() end)
+vim.keymap.set("n", '<leader>ds', function() dapui.float_element() end)
