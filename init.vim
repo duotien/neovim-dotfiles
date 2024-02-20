@@ -58,7 +58,7 @@ set cursorline
 set autoread
 set showmatch
 
-set noinsearch
+set nois
 
 set splitbelow
 set splitright

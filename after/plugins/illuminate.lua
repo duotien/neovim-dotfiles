@@ -1,6 +1,8 @@
 -- pasted the entire thing here in case I need to edit it
 -- default configuration
-require('illuminate').configure({
+local illuminate = require('illuminate')
+
+illuminate.configure({
     -- providers: provider used to get references in the buffer, ordered by priority
     providers = {
         'lsp',
@@ -54,3 +56,6 @@ require('illuminate').configure({
     -- case_insensitive_regex: sets regex case sensitivity
     case_insensitive_regex = false,
 })
+
+vim.keymap.set('n', '<leader>vn', require('illuminate').goto_next_reference, { desc = "Move to next reference" })
+vim.keymap.set('n', '<leader>vp', require('illuminate').goto_prev_reference, { desc = "Move to previous reference" })
