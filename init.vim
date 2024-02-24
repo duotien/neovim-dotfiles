@@ -22,6 +22,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 	Plug 'jbyuki/venn.nvim'
 	Plug 'mfussenegger/nvim-dap'
 	Plug 'rcarriga/nvim-dap-ui'
+	Plug 'RRethy/vim-illuminate'
 
 	
 	" List ends here. Plugins become visible to Vim after this call.
@@ -40,6 +41,7 @@ luafile ~/.config/nvim/after/plugins/cmp.lua
 luafile ~/.config/nvim/after/plugins/venn.lua
 luafile ~/.config/nvim/after/plugins/dap.lua
 luafile ~/.config/nvim/after/plugins/dap-ui.lua
+luafile ~/.config/nvim/after/plugins/illuminate.lua
 
 syntax on
 colorscheme monokai
@@ -55,6 +57,8 @@ set signcolumn=yes
 set cursorline
 set autoread
 set showmatch
+
+set nois
 
 set splitbelow
 set splitright
