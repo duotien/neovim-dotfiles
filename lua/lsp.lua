@@ -55,7 +55,10 @@ lspconfig.lua_ls.setup({
 	}
 })
 
-lspconfig.clangd.setup({ capabilities = lsp_capabilities })
+lspconfig.clangd.setup({
+	capabilities = lsp_capabilities,
+	cmd = {"clangd", "--completion-style=detailed"}
+})
 lspconfig.pyright.setup({ capabilities = lsp_capabilities })
 lspconfig.cmake.setup({capabilities = lsp_capabilities})
 

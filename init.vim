@@ -23,6 +23,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 	Plug 'mfussenegger/nvim-dap'
 	Plug 'rcarriga/nvim-dap-ui'
 	Plug 'RRethy/vim-illuminate'
+	Plug 'nvim-neotest/nvim-nio'
 
 	
 	" List ends here. Plugins become visible to Vim after this call.
@@ -53,6 +54,7 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set scrolloff=8
+set sidescrolloff=8
 set signcolumn=yes
 set cursorline
 set autoread
